@@ -4,6 +4,7 @@ import { MessageCircle } from 'lucide-react';
 import { SITE_CONFIG } from '../config';
 
 export default function FloatingWhatsApp() {
+  if (!SITE_CONFIG.whatsappNumber) return null;
   const url = `https://wa.me/${SITE_CONFIG.whatsappNumber}?text=${encodeURIComponent(
     SITE_CONFIG.whatsappMessage
   )}`;

@@ -13,6 +13,7 @@ import Faq from './components/Faq';
 import Footer from './components/Footer';
 import FloatingMobileCta from './components/FloatingMobileCta';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
+import CookieBanner from './components/CookieBanner';
 
 export default function App() {
   return (
@@ -33,6 +34,7 @@ export default function App() {
       <Footer />
       <FloatingMobileCta />
       <FloatingWhatsApp />
+      <CookieBanner />
     </div>
   );
 }

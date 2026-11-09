@@ -16,6 +16,7 @@ export default function Footer() {
           Idealizado por <strong>{SITE_CONFIG.expert.name}</strong> • Todos os direitos reservados.
         </p>
         {SITE_CONFIG.supportEmail && <p>Suporte: {SITE_CONFIG.supportEmail}</p>}
+        <p><a href="/privacidade.html" className="underline hover:text-slate-300">Política de Privacidade</a></p>
         <p className="text-xs max-w-xl mx-auto text-slate-600 leading-relaxed">
           Aviso Legal: Os resultados podem variar de acordo com o engajamento e a aplicação prática de cada educador. Este produto não garante resultados milagrosos sem a dedicação e o respeito às diretrizes pedagógicas.
         </p>

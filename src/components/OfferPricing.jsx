@@ -12,7 +12,7 @@ export default function OfferPricing() {
     "Apostila Didática Oficial em PDF para baixar e imprimir",
     "Fichas de Registro e Avaliação Pedagógica",
     "Acesso imediato enviado no seu e-mail",
-    "Certificado de Conclusão Incluso",
+    "Certificado de conclusão (curso livre)",
     "Acesso vitalício sem cobranças extras"
   ];
 

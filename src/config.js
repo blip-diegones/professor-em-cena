@@ -6,8 +6,11 @@ export const SITE_CONFIG = {
   // Link de checkout direto da Kiwify ou Hotmart:
   checkoutUrl: "https://pay.kiwify.com.br/",
 
+  // ID do Meta Pixel (só carrega depois do "Aceitar" no banner de cookies):
+  metaPixelId: "",
+
   // Dados de suporte via WhatsApp:
-  whatsappNumber: "5511999999999",
+  whatsappNumber: "" // deixe vazio para ocultar o botão; formato: 5511999999999,
   whatsappMessage: "Olá! Tenho dúvidas sobre o curso Professor em Cena com o Vagner Ralph.",
 
   // Preços e Condições:
