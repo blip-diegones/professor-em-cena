@@ -24,7 +24,7 @@ export default function Philosophy() {
                 loading="lazy"
               />
               <div className="mt-2 text-center">
-                <span className="text-[11px] text-brand-gold font-bold uppercase tracking-wider">
+                <span className="text-xs text-brand-gold font-bold uppercase tracking-wider">
                   A Arte de Conduzir o Palco
                 </span>
               </div>
@@ -42,11 +42,11 @@ export default function Philosophy() {
               O Professor como Condutor de Emoções
             </h2>
             
-            <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-3">
+            <p className="text-slate-300 text-sm leading-relaxed mb-3">
               Quando você entra em sala, o espaço físico é seu palco. Se o professor fala olhando para baixo ou preso à lousa, a turma se dispersa e o celular ganha.
             </p>
             
-            <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+            <p className="text-slate-400 text-sm leading-relaxed mb-4">
               O <strong>Professor em Cena</strong> foi desenhado para te dar o controle e a segurança cênica: exercícios simples de respiração, posicionamento, olhar e jogos cooperativos que geram conexão imediata, sem necessidade de gritar ou impor regras rígidas.
             </p>
 
@@ -61,7 +61,7 @@ export default function Philosophy() {
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-amber-400 flex-shrink-0" />
-                <span>Resultados pedagógicos comprovados em escolas públicas e privadas.</span>
+                <span>Atividades pensadas para escolas públicas, privadas e projetos sociais.</span>
               </div>
             </div>
           </div>

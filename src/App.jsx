@@ -6,6 +6,7 @@ import PainPoints from './components/PainPoints';
 import Philosophy from './components/Philosophy';
 import MethodModules from './components/MethodModules';
 import Mentor from './components/Mentor';
+import Testimonials from './components/Testimonials';
 import ValueStack from './components/ValueStack';
 import OfferPricing from './components/OfferPricing';
 import Faq from './components/Faq';
@@ -24,6 +25,7 @@ export default function App() {
         <Philosophy />
         <MethodModules />
         <Mentor />
+        <Testimonials />
         <ValueStack />
         <OfferPricing />
         <Faq />

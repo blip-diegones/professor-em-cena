@@ -15,7 +15,8 @@ export default function Footer() {
         <p>
           Idealizado por <strong>{SITE_CONFIG.expert.name}</strong> • Todos os direitos reservados.
         </p>
-        <p className="text-[11px] max-w-xl mx-auto text-slate-600 leading-relaxed">
+        {SITE_CONFIG.supportEmail && <p>Suporte: {SITE_CONFIG.supportEmail}</p>}
+        <p className="text-xs max-w-xl mx-auto text-slate-600 leading-relaxed">
           Aviso Legal: Os resultados podem variar de acordo com o engajamento e a aplicação prática de cada educador. Este produto não garante resultados milagrosos sem a dedicação e o respeito às diretrizes pedagógicas.
         </p>
       </div>

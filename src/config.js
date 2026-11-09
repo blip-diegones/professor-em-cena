@@ -15,8 +15,14 @@ export const SITE_CONFIG = {
     original: "R$ 197,00",
     installments: "12x de R$ 4,70",
     cash: "R$ 47,00",
-    discountPercent: "60%"
+    discountPercent: "76%"
   },
+
+  // Depoimentos REAIS (vazio = seção oculta). Formato: { name, role, avatar, text, tag }
+  testimonials: [],
+
+  // E-mail de suporte (aparece no rodapé se preenchido):
+  supportEmail: "",
 
   // Dados do Especialista:
   expert: {

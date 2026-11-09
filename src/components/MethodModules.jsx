@@ -69,7 +69,7 @@ export default function MethodModules() {
           <h2 className="text-2xl sm:text-4xl font-display font-extrabold text-white mt-1.5">
             As 4 Aulas Práticas do Método
           </h2>
-          <p className="text-slate-400 text-xs sm:text-base mt-2 max-w-xl mx-auto">
+          <p className="text-slate-400 text-sm sm:text-base mt-2 max-w-xl mx-auto">
             Cada encontro tem objetivo psicopedagógico claro, passo a passo detalhado e dicas exclusivas para o professor.
           </p>
         </div>
@@ -93,7 +93,7 @@ export default function MethodModules() {
                   <h3 className="text-base sm:text-xl font-display font-bold text-white">
                     {m.title}
                   </h3>
-                  <p className="text-slate-400 text-xs sm:text-sm mt-1">
+                  <p className="text-slate-400 text-sm mt-1">
                     {m.focus}
                   </p>
                 </div>
@@ -102,7 +102,7 @@ export default function MethodModules() {
                 </div>
               </div>
 
-              <div className="mt-4 pt-4 border-t border-brand-cardBorder/60 grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-300">
+              <div className="mt-4 pt-4 border-t border-brand-cardBorder/60 grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-sm text-slate-300">
                 {m.items.map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2">
                     <Check className="w-3.5 h-3.5 text-amber-400 flex-shrink-0" />

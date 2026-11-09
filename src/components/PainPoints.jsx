@@ -37,7 +37,7 @@ export default function PainPoints() {
           <h2 className="text-2xl sm:text-4xl font-display font-extrabold text-white mt-1.5">
             Você também sente que prender a atenção dos alunos hoje virou uma batalha?
           </h2>
-          <p className="text-slate-400 text-xs sm:text-base mt-2 max-w-2xl mx-auto">
+          <p className="text-slate-400 text-sm sm:text-base mt-2 max-w-2xl mx-auto">
             Ensinar hoje exige muito mais que cuspe e giz. Se você enfrenta algum desses cenários diários, saiba que você não está sozinho:
           </p>
         </div>
@@ -57,7 +57,7 @@ export default function PainPoints() {
               </div>
               <div>
                 <h3 className="text-white font-bold text-sm sm:text-base">{item.title}</h3>
-                <p className="text-slate-400 text-xs sm:text-sm mt-1 leading-relaxed">
+                <p className="text-slate-400 text-sm mt-1 leading-relaxed">
                   {item.desc}
                 </p>
               </div>
@@ -77,7 +77,7 @@ export default function PainPoints() {
             <Lightbulb className="w-5 h-5 text-amber-400" />
             <span>O teatro na educação não serve para formar atores de televisão.</span>
           </div>
-          <p className="text-slate-300 text-xs sm:text-sm max-w-2xl mx-auto leading-relaxed">
+          <p className="text-slate-300 text-sm max-w-2xl mx-auto leading-relaxed">
             Ele é a ferramenta mais poderosa que existe para desenvolver escuta atenta, autoconfiança, empatia e presença cênica nos alunos e no próprio professor.
           </p>
         </motion.div>

@@ -17,7 +17,7 @@ export default function FloatingWhatsApp() {
       animate={{ scale: 1 }}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
-      className="fixed bottom-16 sm:bottom-6 right-4 sm:right-6 z-40 w-12 h-12 sm:w-14 sm:h-14 bg-emerald-500 hover:bg-emerald-400 text-white rounded-full flex items-center justify-center shadow-2xl transition-colors cursor-pointer"
+      className="fixed bottom-24 sm:bottom-6 right-4 sm:right-6 z-40 w-12 h-12 sm:w-14 sm:h-14 bg-emerald-500 hover:bg-emerald-400 text-white rounded-full flex items-center justify-center shadow-2xl transition-colors cursor-pointer"
       title="Tirar dúvidas no WhatsApp"
       aria-label="Tirar dúvidas no WhatsApp com nossa equipe"
     >

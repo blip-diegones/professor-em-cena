@@ -6,16 +6,16 @@ import { SITE_CONFIG } from '../config';
 export default function Hero() {
   return (
     <section className="relative pt-7 pb-14 sm:py-20 px-4 sm:px-6 spotlight-hero overflow-hidden">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-5xl mx-auto flex flex-col">
         
         {/* Badge Superior */}
         <motion.div 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="flex justify-center mb-4"
+          className="flex justify-center mb-4 order-1"
         >
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-cardBorder text-brand-goldLight text-xs sm:text-sm font-semibold shadow-inner">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-cardBorder text-brand-goldLight text-sm font-semibold shadow-inner">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
             <span>Apostila Didática + Vídeo Aulas Guiadas</span>
           </div>
@@ -26,7 +26,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-3xl sm:text-5xl md:text-6xl font-display font-black text-white text-center leading-[1.15] sm:leading-tight mb-4 max-w-4xl mx-auto"
+          className="order-2 text-3xl sm:text-5xl md:text-6xl font-display font-black text-white text-center leading-[1.15] sm:leading-tight mb-4 max-w-4xl mx-auto"
         >
           Transforme sua sala de aula em um{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-500">
@@ -39,7 +39,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-sm sm:text-xl text-slate-300 text-center max-w-2xl mx-auto mb-7 leading-relaxed font-normal"
+          className="order-3 text-base sm:text-xl text-slate-300 text-center max-w-2xl mx-auto mb-6 leading-relaxed font-normal"
         >
           O método em <strong>4 aulas estruturadas + apostila pronta para impressão</strong> para você engajar qualquer turma através de jogos teatrais —{' '}
           <em>mesmo que você nunca tenha pisado num palco</em>.
@@ -50,18 +50,18 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.3 }}
-          className="relative max-w-sm sm:max-w-md mx-auto mb-8"
+          className="order-5 relative max-w-[300px] sm:max-w-md mx-auto mt-10 mb-2"
         >
           {/* Brilho cênico de fundo */}
           <div className="absolute -inset-1.5 rounded-3xl bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-600 opacity-35 blur-xl"></div>
           
           <div className="relative bg-brand-card rounded-3xl overflow-hidden border border-brand-cardBorder shadow-2xl">
-            <div className="relative aspect-[3/4] w-full bg-slate-900 overflow-hidden">
+            <div className="relative aspect-[4/5] sm:aspect-[3/4] w-full bg-slate-900 overflow-hidden">
               <img 
                 src="/vagner-hero.jpeg" 
                 alt="Vagner Ralph - Mentor e Criador do Método Professor em Cena" 
-                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
-                loading="eager"
+                className="w-full h-full object-cover object-top"
+                loading="eager" fetchpriority="high" width="600" height="750"
               />
               
               {/* Gradiente escuro na base da foto */}
@@ -82,7 +82,7 @@ export default function Hero() {
                   </div>
                   <div>
                     <h4 className="text-white font-bold text-sm leading-tight">{SITE_CONFIG.expert.name}</h4>
-                    <p className="text-slate-400 text-[11px]">{SITE_CONFIG.expert.role}</p>
+                    <p className="text-slate-400 text-xs">{SITE_CONFIG.expert.role}</p>
                   </div>
                 </div>
               </div>
@@ -95,23 +95,21 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="text-center max-w-md mx-auto"
+          className="order-4 text-center w-full max-w-md mx-auto"
         >
           <motion.a 
             href="#oferta" 
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            className="animate-pulse-glow block w-full py-4 sm:py-5 px-6 rounded-2xl bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 hover:from-amber-400 hover:to-amber-500 text-black font-display font-black text-lg sm:text-xl uppercase tracking-wider transition-all duration-300 shadow-xl cursor-pointer"
+            className="animate-pulse-glow block w-full py-4 sm:py-5 px-4 rounded-2xl bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 hover:from-amber-400 hover:to-amber-500 text-black font-display font-black text-base sm:text-xl uppercase tracking-wider transition-all duration-300 shadow-xl cursor-pointer"
           >
             QUERO DOMINAR O MÉTODO EM CENA
           </motion.a>
           
-          <div className="mt-3 text-xs sm:text-sm text-slate-400 flex items-center justify-center gap-2">
+          <div className="mt-3 text-sm text-slate-400 flex items-center justify-center gap-x-3 gap-y-1 flex-wrap">
             <span className="flex items-center gap-1"><Lock className="w-3.5 h-3.5 text-emerald-400" /> Compra Segura</span>
-            <span>•</span>
-            <span className="flex items-center gap-1"><Zap className="w-3.5 h-3.5 text-amber-400" /> Acesso Imediato</span>
-            <span>•</span>
-            <span className="flex items-center gap-1"><ShieldCheck className="w-3.5 h-3.5 text-blue-400" /> Garantia de 7 Dias</span>
+                        <span className="flex items-center gap-1"><Zap className="w-3.5 h-3.5 text-amber-400" /> Acesso Imediato</span>
+                        <span className="flex items-center gap-1"><ShieldCheck className="w-3.5 h-3.5 text-blue-400" /> Garantia de 7 Dias</span>
           </div>
         </motion.div>
 
@@ -120,23 +118,23 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-2.5 max-w-3xl mx-auto text-center"
+          className="order-6 mt-8 grid grid-cols-2 sm:grid-cols-4 gap-2.5 max-w-3xl mx-auto text-center"
         >
           <div className="bg-brand-card/70 border border-brand-cardBorder rounded-2xl p-3 shadow-sm hover:border-brand-gold/30 transition-colors">
             <p className="text-brand-gold font-extrabold text-xl sm:text-2xl">4 Aulas</p>
-            <p className="text-slate-400 text-[11px] sm:text-xs mt-0.5">Completas & Estruturadas</p>
+            <p className="text-slate-400 text-xs mt-0.5">Completas & Estruturadas</p>
           </div>
           <div className="bg-brand-card/70 border border-brand-cardBorder rounded-2xl p-3 shadow-sm hover:border-brand-gold/30 transition-colors">
             <p className="text-brand-gold font-extrabold text-xl sm:text-2xl">Apostila</p>
-            <p className="text-slate-400 text-[11px] sm:text-xs mt-0.5">Pronta para Impressão</p>
+            <p className="text-slate-400 text-xs mt-0.5">Pronta para Impressão</p>
           </div>
           <div className="bg-brand-card/70 border border-brand-cardBorder rounded-2xl p-3 shadow-sm hover:border-brand-gold/30 transition-colors">
             <p className="text-brand-gold font-extrabold text-xl sm:text-2xl">100%</p>
-            <p className="text-slate-400 text-[11px] sm:text-xs mt-0.5">Foco no Chão de Sala</p>
+            <p className="text-slate-400 text-xs mt-0.5">Foco no Chão de Sala</p>
           </div>
           <div className="bg-brand-card/70 border border-brand-cardBorder rounded-2xl p-3 shadow-sm hover:border-brand-gold/30 transition-colors">
             <p className="text-brand-gold font-extrabold text-xl sm:text-2xl">Vitalício</p>
-            <p className="text-slate-400 text-[11px] sm:text-xs mt-0.5">Acesso Sem Mensalidade</p>
+            <p className="text-slate-400 text-xs mt-0.5">Acesso Sem Mensalidade</p>
           </div>
         </motion.div>
 

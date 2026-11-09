@@ -28,7 +28,7 @@ export default function Faq() {
     },
     {
       q: "E se eu não gostar ou achar que não serviu para a minha turma?",
-      a: "Você tem 7 dias de garantia incondicional. Basta solicitar o reembolso na própria plataforma da Kiwify/Hotmart com um único clique que devolvemos 100% do valor pago sem burocracia."
+      a: "Você tem 7 dias de garantia incondicional. Basta solicitar o reembolso dentro desse prazo que devolvemos 100% do valor pago, sem burocracia."
     }
   ];
 
@@ -57,7 +57,7 @@ export default function Faq() {
                 <button
                   type="button"
                   onClick={() => setOpenIndex(isOpen ? -1 : index)}
-                  className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 text-white font-bold text-xs sm:text-base cursor-pointer hover:bg-white/[0.02] transition-colors"
+                  className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 text-white font-bold text-sm sm:text-base cursor-pointer hover:bg-white/[0.02] transition-colors"
                 >
                   <span>{faq.q}</span>
                   <motion.div
@@ -77,7 +77,7 @@ export default function Faq() {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3, ease: "easeInOut" }}
                     >
-                      <div className="px-4 sm:px-5 pb-5 text-slate-400 text-xs sm:text-sm leading-relaxed border-t border-brand-cardBorder/40 pt-3">
+                      <div className="px-4 sm:px-5 pb-5 text-slate-400 text-sm leading-relaxed border-t border-brand-cardBorder/40 pt-3">
                         {faq.a}
                       </div>
                     </motion.div>

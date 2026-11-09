@@ -37,7 +37,7 @@ export default function ValueStack() {
         <h2 className="text-2xl sm:text-4xl font-display font-extrabold text-white mt-1.5 mb-2">
           O que você recebe ao garantir sua vaga
         </h2>
-        <p className="text-slate-400 text-xs sm:text-base max-w-xl mx-auto mb-10">
+        <p className="text-slate-400 text-sm sm:text-base max-w-xl mx-auto mb-10">
           Um kit pedagógico completo para você baixar, imprimir e levar direto para a sua próxima aula.
         </p>
 

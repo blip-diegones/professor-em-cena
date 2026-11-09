@@ -2,14 +2,23 @@
 <html lang="pt-BR" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#080a0f" />
     <title>Professor em Cena • Método Prático de Iniciação Teatral para Educadores</title>
     <meta name="description" content="Transforme sua sala de aula em um palco de engajamento, foco e expressão. O passo a passo prático para educadores destravarem a atenção e criatividade dos alunos." />
     
+    <link rel="preload" as="image" href="/vagner-hero.jpeg" fetchpriority="high" />
+
+    <!-- Meta Pixel: troque SEU_PIXEL_ID -->
+    <script>
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init','SEU_PIXEL_ID'); fbq('track','PageView');
+    </script>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
   <body class="bg-brand-dark text-slate-200 antialiased selection:bg-brand-gold selection:text-black min-h-screen">
     <div id="root"></div>
